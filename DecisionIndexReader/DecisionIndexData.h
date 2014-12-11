@@ -1,5 +1,17 @@
 #pragma once
 
+
+/*
+Contains the data structure used by DecisionIndexReader and DecisionIndexWriter.
+***************************************************************************************************
+Authors :
+Michael McGlynn (MRM)
+***************************************************************************************************
+Ver: By:  Date:       Comment:
+1.0  MRM  11/12/2014  First version
+***************************************************************************************************
+*/
+
 namespace DecisionIndex
 {
 
