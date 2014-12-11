@@ -19,8 +19,8 @@ TurnDirection GetOldIndexType(DirectionChangeIndexReader::INDEX_TYPE const & ind
 int main( int argc, char **argv)
 {
 
-	const char *szFileOut = "C:\\develop\\801 - Map\\new.decision.xml";
-	const char *szFileIn = "C:\\develop\\801 - Map\\20140709-093601-Cam1.direction.xml";
+	const char *szFileIn = "C:\\Users\\develop\\MapMatchPlugin\\201410300938.direction_3_reversed.xml";
+	const char *szFileOut = "C:\\Users\\develop\\MapMatchPlugin\\new.decision.xml";
 
 	DecisionIndexWriter writer;
 	writer.Open(szFileOut);

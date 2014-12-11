@@ -1,5 +1,17 @@
-
 #pragma once
+
+/*
+Class for writing an xml with LEFT/RIGHT/UNKNOWN decisions indexed against time, with a confidence value.
+example row: <Decision ID="5" Type="R" Time="635502607413618158" Confidence="1.000000" />
+Optional elements can be added for debugging.
+***************************************************************************************************
+Authors :
+Michael McGlynn (MRM)
+***************************************************************************************************
+Ver: By:  Date:       Comment:
+1.0  MRM  11/12/2014  First version
+***************************************************************************************************
+*/
 
 #include "tinyxml.h"
 #include "tinystr.h"
