@@ -1,0 +1,635 @@
+<?xml version="1.0" ?>
+<DirectionChangeIndex FormatVersion="1.0" Type="bpf" File="">
+    <DirectionChange Type="Left">
+        <Time Start="294156.95" End="294158.15" />
+        <Frame Start="10182" End="10212" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="294158.91" End="294159.15" />
+        <Frame Start="10231" End="10237" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="294885.37" End="294886.77" />
+        <Frame Start="28394" End="28429" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="294905.01" End="294905.85" />
+        <Frame Start="28885" End="28906" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="294919.85" End="294920.33" />
+        <Frame Start="29256" End="29268" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="295299.01" End="295299.57" />
+        <Frame Start="38736" End="38750" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="295431.12" End="295431.28" />
+        <Frame Start="42039" End="42043" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="295431.56" End="295431.76" />
+        <Frame Start="42050" End="42055" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="295453.48" End="295454.84" />
+        <Frame Start="42598" End="42632" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="295456.96" End="295457.28" />
+        <Frame Start="42685" End="42693" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="295535.91" End="295537.43" />
+        <Frame Start="44659" End="44697" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="295548.71" End="295549.91" />
+        <Frame Start="44979" End="45009" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="296623.93" End="296624.38" />
+        <Frame Start="71862" End="71873" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="296624.74" End="296626.14" />
+        <Frame Start="71882" End="71917" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="296626.42" End="296626.62" />
+        <Frame Start="71924" End="71929" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="296701.97" End="296703.21" />
+        <Frame Start="73813" End="73844" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="296923.43" End="296924.91" />
+        <Frame Start="79350" End="79387" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="297166.13" End="297167.45" />
+        <Frame Start="85418" End="85451" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="297170.85" End="297171.69" />
+        <Frame Start="85536" End="85557" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="297361.51" End="297361.63" />
+        <Frame Start="90303" End="90306" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="297362.67" End="297362.79" />
+        <Frame Start="90332" End="90335" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="297364.11" End="297364.23" />
+        <Frame Start="90368" End="90371" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="297364.59" End="297364.79" />
+        <Frame Start="90380" End="90385" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="297548.89" End="297549.05" />
+        <Frame Start="94988" End="94992" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="297549.45" End="297551.05" />
+        <Frame Start="95002" End="95042" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="297754.32" End="297755.11" />
+        <Frame Start="100124" End="100144" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="297822.83" End="297823.27" />
+        <Frame Start="101837" End="101848" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="297906.10" End="297906.62" />
+        <Frame Start="103919" End="103932" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="298300.15" End="298302.19" />
+        <Frame Start="113771" End="113822" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="298302.83" End="298303.03" />
+        <Frame Start="113838" End="113843" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="298372.38" End="298372.94" />
+        <Frame Start="115577" End="115591" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="298380.10" End="298380.74" />
+        <Frame Start="115770" End="115786" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="298426.06" End="298426.42" />
+        <Frame Start="116919" End="116928" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="298426.78" End="298427.58" />
+        <Frame Start="116937" End="116957" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="298433.70" End="298433.98" />
+        <Frame Start="117110" End="117117" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="298441.05" End="298441.46" />
+        <Frame Start="117294" End="117304" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="298446.22" End="298447.65" />
+        <Frame Start="117423" End="117459" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="298451.77" End="298451.89" />
+        <Frame Start="117562" End="117565" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="298456.13" End="298457.77" />
+        <Frame Start="117671" End="117712" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="299266.90" End="299267.38" />
+        <Frame Start="137942" End="137954" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="299271.14" End="299271.26" />
+        <Frame Start="138048" End="138051" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="299274.78" End="299275.10" />
+        <Frame Start="138139" End="138147" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="299612.11" End="299613.35" />
+        <Frame Start="146573" End="146604" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="299614.59" End="299614.83" />
+        <Frame Start="146635" End="146641" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="299623.15" End="299625.15" />
+        <Frame Start="146849" End="146899" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="299640.67" End="299640.87" />
+        <Frame Start="147287" End="147292" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="299641.39" End="299642.15" />
+        <Frame Start="147305" End="147324" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="299653.95" End="299655.99" />
+        <Frame Start="147619" End="147670" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="299683.91" End="299684.19" />
+        <Frame Start="148368" End="148375" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="299932.08" End="299933.21" />
+        <Frame Start="154573" End="154601" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="299935.76" End="299936.32" />
+        <Frame Start="154665" End="154679" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="300097.47" End="300097.63" />
+        <Frame Start="158708" End="158712" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="300116.19" End="300116.67" />
+        <Frame Start="159176" End="159188" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="300117.11" End="300117.27" />
+        <Frame Start="159199" End="159203" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="300210.50" End="300210.62" />
+        <Frame Start="161534" End="161537" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="300860.04" End="300860.96" />
+        <Frame Start="177774" End="177797" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="300878.72" End="300880.88" />
+        <Frame Start="178241" End="178295" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="301364.12" End="301365.00" />
+        <Frame Start="190377" End="190399" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="301717.29" End="301718.49" />
+        <Frame Start="199207" End="199237" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="301833.64" End="301834.16" />
+        <Frame Start="202116" End="202129" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="301871.08" End="301871.28" />
+        <Frame Start="203052" End="203057" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="302349.19" End="302349.79" />
+        <Frame Start="215006" End="215021" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="302618.93" End="302620.37" />
+        <Frame Start="221750" End="221786" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="305256.86" End="305258.34" />
+        <Frame Start="287704" End="287741" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="305460.20" End="305460.80" />
+        <Frame Start="292788" End="292803" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="305473.48" End="305473.64" />
+        <Frame Start="293120" End="293124" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="305496.64" End="305497.00" />
+        <Frame Start="293699" End="293708" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="305498.52" End="305498.84" />
+        <Frame Start="293746" End="293754" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="305854.01" End="305854.29" />
+        <Frame Start="302634" End="302641" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="305929.40" End="305930.16" />
+        <Frame Start="304519" End="304538" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="305958.00" End="305958.40" />
+        <Frame Start="305234" End="305244" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="306197.42" End="306197.66" />
+        <Frame Start="311220" End="311226" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="306261.94" End="306264.98" />
+        <Frame Start="312833" End="312909" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="306557.59" End="306557.87" />
+        <Frame Start="320225" End="320232" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="306558.19" End="306558.63" />
+        <Frame Start="320240" End="320251" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="306597.15" End="306599.07" />
+        <Frame Start="321214" End="321262" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="306866.40" End="306866.80" />
+        <Frame Start="327946" End="327956" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="307038.91" End="307039.11" />
+        <Frame Start="332259" End="332264" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="307413.68" End="307414.03" />
+        <Frame Start="341629" End="341638" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="566670.07" End="307470.51" />
+        <Frame Start="343039" End="343050" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="307495.79" End="307497.11" />
+        <Frame Start="343682" End="343715" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="307763.80" End="307764.88" />
+        <Frame Start="350383" End="350410" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="308283.04" End="308285.56" />
+        <Frame Start="363365" End="363428" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="308286.04" End="308286.24" />
+        <Frame Start="363440" End="363445" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="308290.88" End="308291.12" />
+        <Frame Start="363561" End="363567" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="308359.59" End="308360.23" />
+        <Frame Start="365279" End="365295" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="308407.95" End="308409.11" />
+        <Frame Start="366488" End="366517" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="308422.47" End="308423.87" />
+        <Frame Start="366851" End="366886" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="308667.33" End="308668.13" />
+        <Frame Start="372973" End="372993" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="308672.97" End="308673.13" />
+        <Frame Start="373114" End="373118" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="308678.69" End="308679.01" />
+        <Frame Start="373257" End="373265" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="308679.89" End="308680.13" />
+        <Frame Start="373287" End="373293" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="308684.32" End="308686.00" />
+        <Frame Start="373398" End="373440" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="308697.08" End="308697.60" />
+        <Frame Start="373717" End="373730" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="308698.08" End="308698.60" />
+        <Frame Start="373742" End="373755" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="309203.88" End="309204.36" />
+        <Frame Start="386388" End="386400" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="309219.12" End="309219.44" />
+        <Frame Start="386769" End="386777" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="309223.04" End="309223.24" />
+        <Frame Start="386867" End="386872" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="309226.76" End="309226.96" />
+        <Frame Start="386960" End="386965" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="309388.74" End="309389.54" />
+        <Frame Start="391010" End="391030" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="309401.70" End="309403.54" />
+        <Frame Start="391334" End="391380" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="309415.54" End="309416.54" />
+        <Frame Start="391680" End="391705" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="309431.46" End="309432.58" />
+        <Frame Start="392078" End="392106" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="309584.01" End="309584.85" />
+        <Frame Start="395892" End="395913" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="309635.84" End="309636.52" />
+        <Frame Start="397188" End="397205" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="309695.60" End="309696.04" />
+        <Frame Start="398682" End="398693" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="309704.36" End="309705.32" />
+        <Frame Start="398901" End="398925" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="309706.04" End="309706.36" />
+        <Frame Start="398943" End="398951" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="309750.03" End="309750.39" />
+        <Frame Start="400043" End="400052" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="309750.83" End="309750.99" />
+        <Frame Start="400063" End="400067" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="309751.31" End="309752.35" />
+        <Frame Start="400075" End="400101" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="309899.38" End="309901.54" />
+        <Frame Start="403777" End="403831" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="309914.30" End="309915.26" />
+        <Frame Start="404150" End="404174" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="310110.56" End="310111.08" />
+        <Frame Start="409057" End="409070" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="310185.95" End="310186.63" />
+        <Frame Start="410942" End="410959" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="311019.20" End="311019.56" />
+        <Frame Start="431775" End="431784" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="311030.32" End="311031.28" />
+        <Frame Start="432053" End="432077" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="311069.44" End="311069.84" />
+        <Frame Start="433031" End="433041" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="311084.64" End="311085.76" />
+        <Frame Start="433411" End="433439" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="311883.57" End="311883.81" />
+        <Frame Start="453386" End="453392" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="311887.29" End="311887.73" />
+        <Frame Start="453479" End="453490" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="311927.80" End="311928.12" />
+        <Frame Start="454492" End="454500" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="312017.08" End="312018.00" />
+        <Frame Start="456724" End="456747" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="312018.28" End="312018.40" />
+        <Frame Start="456754" End="456757" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="312524.79" End="312525.23" />
+        <Frame Start="469418" End="469429" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="313241.21" End="313241.45" />
+        <Frame Start="487330" End="487336" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="313242.09" End="313242.29" />
+        <Frame Start="487352" End="487357" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="313244.25" End="313246.05" />
+        <Frame Start="487406" End="487451" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="313246.37" End="313246.65" />
+        <Frame Start="487459" End="487466" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="313254.97" End="313256.33" />
+        <Frame Start="487674" End="487708" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="314104.58" End="314106.50" />
+        <Frame Start="508916" End="508964" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="314123.74" End="314125.58" />
+        <Frame Start="509395" End="509441" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="314743.96" End="314744.92" />
+        <Frame Start="524902" End="524926" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="315300.63" End="315300.91" />
+        <Frame Start="538820" End="538827" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="315322.31" End="315322.99" />
+        <Frame Start="539362" End="539379" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="315647.52" End="315648.36" />
+        <Frame Start="547493" End="547514" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="315888.70" End="315888.98" />
+        <Frame Start="553523" End="553530" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="315889.54" End="315890.54" />
+        <Frame Start="553544" End="553569" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="315897.62" End="315898.58" />
+        <Frame Start="553746" End="553770" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="315898.98" End="315899.26" />
+        <Frame Start="553780" End="553787" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="316042.53" End="316043.89" />
+        <Frame Start="557369" End="557403" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="316083.37" End="316084.33" />
+        <Frame Start="558390" End="558414" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="316086.69" End="316087.13" />
+        <Frame Start="558473" End="558484" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="316109.36" End="316109.56" />
+        <Frame Start="559040" End="559045" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="316112.28" End="316112.40" />
+        <Frame Start="559113" End="559116" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="316585.84" End="316586.24" />
+        <Frame Start="570953" End="570963" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="316588.36" End="316588.56" />
+        <Frame Start="571016" End="571021" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="316865.54" End="316865.82" />
+        <Frame Start="577946" End="577953" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="317315.42" End="317317.26" />
+        <Frame Start="589194" End="589240" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="317317.66" End="317317.90" />
+        <Frame Start="589250" End="589256" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="317409.21" End="317411.01" />
+        <Frame Start="591539" End="591584" />
+    </DirectionChange>
+    <DirectionChange Type="Right">
+        <Time Start="317426.61" End="317428.85" />
+        <Frame Start="591974" End="592030" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="317681.91" End="317682.47" />
+        <Frame Start="598357" End="598371" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="317695.27" End="317695.39" />
+        <Frame Start="598691" End="598694" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="317695.71" End="317697.51" />
+        <Frame Start="598702" End="598747" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="317700.23" End="317700.39" />
+        <Frame Start="598815" End="598819" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="317855.97" End="317858.97" />
+        <Frame Start="602709" End="602784" />
+    </DirectionChange>
+    <DirectionChange Type="Left">
+        <Time Start="318098.39" End="318099.55" />
+        <Frame Start="608770" End="608799" />
+    </DirectionChange>
+</DirectionChangeIndex>

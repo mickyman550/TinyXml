@@ -1,0 +1,15 @@
+﻿Build started 10/12/2014 17:52:35.
+     1>Project "C:\develop\801 - Map\DecisionIndex\DecisionIndexWriter\DecisionIndexWriter.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\develop\801 - Map\DecisionIndex\TinyXmlLib" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\DecisionIndexWriter.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\develop\801 - Map\DecisionIndex\Debug\DecisionIndexWriter.lib" /NOLOGO Debug\DecisionIndexWriter.obj
+         Debug\Main.obj
+         Debug\stdafx.obj
+         DecisionIndexWriter.vcxproj -> C:\develop\801 - Map\DecisionIndex\Debug\DecisionIndexWriter.lib
+     1>Done Building Project "C:\develop\801 - Map\DecisionIndex\DecisionIndexWriter\DecisionIndexWriter.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.43

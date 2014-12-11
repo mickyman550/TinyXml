@@ -1,0 +1,17 @@
+﻿Build started 10/12/2014 17:54:59.
+     1>Project "C:\develop\801 - Map\DecisionIndex\DirectionChangeIndexReader\DirectionChangeIndexReader.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\develop\801 - Map\DecisionIndex\TinyXmlLib" /Itinyxml /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\DirectionChangeIndexReader.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DirectionChangeIndexReader.cpp
+         DirectionChangeIndexReader.cpp
+     1>c:\develop\801 - map\decisionindex\directionchangeindexreader\directionchangeindexreader.cpp(34): warning C4101: 'attr' : unreferenced local variable
+     1>c:\develop\801 - map\decisionindex\directionchangeindexreader\directionchangeindexreader.cpp(84): warning C4018: '<' : signed/unsigned mismatch
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\develop\801 - Map\DecisionIndex\Debug\DirectionChangeIndexReader.lib" /NOLOGO Debug\DirectionChangeIndexReader.obj
+         Debug\Main.obj
+         Debug\stdafx.obj
+         DirectionChangeIndexReader.vcxproj -> C:\develop\801 - Map\DecisionIndex\Debug\DirectionChangeIndexReader.lib
+     1>Done Building Project "C:\develop\801 - Map\DecisionIndex\DirectionChangeIndexReader\DirectionChangeIndexReader.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.48

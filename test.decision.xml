@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<DecisionIndex FormatVersion="1.0" File="C:\develop\801 - Map\DecisionIndex\test.decision.xml">
+    <Decision ID="0" Type="L" Time="324598745969800" Confidence="1.000000" />
+    <Decision ID="1" Type="L" Time="324598745970800" Confidence="1.000000" />
+    <Decision ID="2" Type="L" Time="324598745971800" Confidence="1.000000" />
+    <Decision ID="3" Type="L" Time="324598745972800" Confidence="1.000000" />
+    <Decision ID="4" Type="L" Time="324598745973800" Confidence="1.000000" />
+</DecisionIndex>
