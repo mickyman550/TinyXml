@@ -61,7 +61,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				AdditionalDependencies="TinyXmlLib_2008.lib"
+				AdditionalDependencies="TinyXml.lib"
 				AdditionalLibraryDirectories="$(OutDir)"
 			/>
 			<Tool
@@ -126,7 +126,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				AdditionalDependencies="TinyXmlLib_2008.lib"
+				AdditionalDependencies="TinyXml.lib"
 				AdditionalLibraryDirectories="$(OutDir)"
 			/>
 			<Tool

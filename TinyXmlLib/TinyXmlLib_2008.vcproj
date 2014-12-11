@@ -60,6 +60,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
+				OutputFile="$(OutDir)\TinyXml.lib"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -122,6 +123,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
+				OutputFile="$(OutDir)\TinyXml.lib"
 				IgnoreAllDefaultLibraries="true"
 			/>
 			<Tool
