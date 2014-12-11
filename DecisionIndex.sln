@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DecisionIndexReader", "DecisionIndexReader\DecisionIndexReader.vcxproj", "{0FA16604-604E-4E18-BDE0-3848AC37C663}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8DFBDD3F-BEC6-41B4-B5DE-1905C4E4426E} = {8DFBDD3F-BEC6-41B4-B5DE-1905C4E4426E}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DecisionIndexWriter", "DecisionIndexWriter\DecisionIndexWriter.vcxproj", "{788A6DB1-819E-43C8-A425-EEE25E54D563}"
 EndProject

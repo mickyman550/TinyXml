@@ -1,0 +1,23 @@
+﻿Build started 11/12/2014 11:22:04.
+     1>Project "C:\develop\801 - Map\DecisionIndex\DecisionIndexReader\DecisionIndexReader.vcxproj" on node 6 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(356,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\develop\801 - Map\DecisionIndex\TinyXmlLib" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\vs2013\DecisionIndexReader.pch" /Fo"Debug\vs2013\\" /Fd"Debug\vs2013\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\develop\801 - Map\DecisionIndex\TinyXmlLib" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\vs2013\DecisionIndexReader.pch" /Fo"Debug\vs2013\\" /Fd"Debug\vs2013\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DecisionIndexReader.cpp Main.cpp
+         Main.cpp
+         DecisionIndexReader.cpp
+     1>c:\develop\801 - map\decisionindex\decisionindexreader\decisionindexreader.cpp(59): warning C4101: 'attr' : unreferenced local variable
+     1>c:\develop\801 - map\decisionindex\decisionindexreader\decisionindexreader.cpp(92): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\develop\801 - Map\DecisionIndex\bin\Debug\vs2013\DecisionIndexReader.lib" /NOLOGO Debug\vs2013\DecisionIndexReader.obj
+         Debug\vs2013\Main.obj
+         Debug\vs2013\stdafx.obj
+         DecisionIndexReader.vcxproj -> C:\develop\801 - Map\DecisionIndex\bin\Debug\vs2013\DecisionIndexReader.lib
+     1>Done Building Project "C:\develop\801 - Map\DecisionIndex\DecisionIndexReader\DecisionIndexReader.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.18
