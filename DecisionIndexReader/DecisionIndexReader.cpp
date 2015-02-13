@@ -6,38 +6,43 @@
 namespace DecisionIndex
 {
 
-	DecisionIndexReader::DecisionIndexReader()
+	static bool SetOrder(const DecisionIndex::Data & lhs, const DecisionIndex::Data & rhs)
 	{
+		return lhs.i64Time > rhs.i64Time;
 	}
 
-	DecisionIndexReader::~DecisionIndexReader()
+	Reader::Reader()
+	{
+		m_psetIndexData = new OrderedSet(SetOrder);
+	}
+
+	Reader::~Reader()
 	{
 		Clear();
 	}
 
-	//in case any tinyxml stuff needs to be cleared.
-	void DecisionIndexReader::Clear()
+	void Reader::Clear()
 	{
-		m_vIndexData.clear();
+		if(m_psetIndexData)
+		{
+			m_psetIndexData->clear();
+			delete m_psetIndexData;
+			m_psetIndexData = 0;
+		}
 	}
 
 	TurnDirection GetDecisionType(const char *szType)
 	{
-		TurnDirection index_type;
-
 		std::string ssType = szType;
-
 		if (ssType == "L")
-			index_type = Direction_Left;
+			return Direction_Left;
 		else if (ssType == "R")
-			index_type = Direction_Right;
+			return Direction_Right;
 		else
-			index_type = Direction_Unknown;
-
-		return index_type;
+			return Direction_Unknown;
 	}
 
-	bool DecisionIndexReader::Load(const char *szFilename)
+	bool Reader::Load(const char *szFilename)
 	{
 		Clear();
 
@@ -79,7 +84,7 @@ namespace DecisionIndex
 			int iId = atoi(ssId.c_str());
 			__int64 i64Time = _atoi64(ssTime.c_str());
 			double dConfidence = atof(ssConfidence.c_str());
-			m_vIndexData.push_back(DecisionIndexData(iId, GetDecisionType(ssType.c_str()), i64Time, dConfidence));
+			addToBuffer(DecisionIndex::Data(iId, GetDecisionType(ssType.c_str()), i64Time, dConfidence));
 		}
 
 		doc.Clear();
@@ -87,18 +92,25 @@ namespace DecisionIndex
 		return true;
 	}
 
-	DecisionIndexData const& DecisionIndexReader::GetIndex(int i)
+	void Reader::addToBuffer(DecisionIndex::Data const& data)
 	{
-		assert(i >= 0 && i < m_vIndexData.size());
-		return m_vIndexData[i];
+		if(!m_psetIndexData)
+			m_psetIndexData = new OrderedSet(SetOrder);
+
+		m_psetIndexData->insert(data);
 	}
 
-	int DecisionIndexReader::GetNumIndexes()
+	bool Reader::GetDecision(DecisionIndex::Data & data)
 	{
-		return m_vIndexData.size();
+		if(!m_psetIndexData->size())
+			return false;
+
+		data = *m_psetIndexData->rbegin();
+		m_psetIndexData->erase(data);
+		return true;
 	}
 
-	void DecisionIndexReader::OnError(const char *szFmt, ...)
+	void Reader::OnError(const char *szFmt, ...)
 	{
 		va_list pArgs;
 		va_start(pArgs, szFmt);

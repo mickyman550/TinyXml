@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BallastMapMatchResultComparison", "BallastMapMatchResultComparison.vcproj", "{C52B9C12-5740-4993-AF2D-36AD18D5F38B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DecisionIndexReader", "..\DecisionIndexReader\DecisionIndexReader.vcproj", "{0FA16604-604E-4E18-BDE0-3848AC37C663}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C52B9C12-5740-4993-AF2D-36AD18D5F38B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C52B9C12-5740-4993-AF2D-36AD18D5F38B}.Debug|Win32.Build.0 = Debug|Win32
+		{C52B9C12-5740-4993-AF2D-36AD18D5F38B}.Release|Win32.ActiveCfg = Release|Win32
+		{C52B9C12-5740-4993-AF2D-36AD18D5F38B}.Release|Win32.Build.0 = Release|Win32
+		{0FA16604-604E-4E18-BDE0-3848AC37C663}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0FA16604-604E-4E18-BDE0-3848AC37C663}.Debug|Win32.Build.0 = Debug|Win32
+		{0FA16604-604E-4E18-BDE0-3848AC37C663}.Release|Win32.ActiveCfg = Release|Win32
+		{0FA16604-604E-4E18-BDE0-3848AC37C663}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -10,6 +10,7 @@ Michael McGlynn (MRM)
 ***************************************************************************************************
 Ver: By:  Date:       Comment:
 1.0  MRM  11/12/2014  First version
+1.1  MRM  12/12/2014  Use ordered set instead of vector
 ***************************************************************************************************
 
 */
@@ -18,29 +19,40 @@ Ver: By:  Date:       Comment:
 #include "tinystr.h"
 #include <string>
 #include <vector>
-
+#include <set>
 #include "DecisionIndexData.h"
 
 namespace DecisionIndex
 {
 
-	class DecisionIndexReader
+	//could be used to get a decision from any given context.
+	class IReader
 	{
 	public:
-		DecisionIndexReader();
-		~DecisionIndexReader();
+		virtual bool GetDecision(DecisionIndex::Data & data) = 0;
+	};
+
+	typedef std::set<DecisionIndex::Data, bool(*)( const DecisionIndex::Data &, const DecisionIndex::Data &)> OrderedSet;
+
+	//read decisions from a file.
+	class Reader : public IReader
+	{
+	public:
+		Reader();
+		~Reader();
 
 		void Clear();
 
 		bool Load(const char *szFilename);
 
-		int GetNumIndexes();
-		DecisionIndexData const& GetIndex(int i);
+		virtual bool GetDecision(DecisionIndex::Data & data);
+
 		const char *GetLastError(){ return m_szLastError; }
 	private:
+		void addToBuffer(const DecisionIndex::Data & data);
 		void OnError(const char *szFmt, ...);
 	private:
-		std::vector<DecisionIndexData> m_vIndexData;
+		OrderedSet *m_psetIndexData;
 		char m_szLastError[2048];
 	};
 

@@ -16,6 +16,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TinyXmlLib", "TinyXmlLib\Ti
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectionChangeIndexReader", "DirectionChangeIndexReader\DirectionChangeIndexReader.vcxproj", "{12471C41-A7BA-405D-9B2F-63FF6BAA7786}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DecisionIndexConverter", "DecisionIndexConverter\DecisionIndexConverter.vcxproj", "{3EB2AD7E-DDDB-46A5-873F-8A466E6C9999}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -42,6 +44,10 @@ Global
 		{12471C41-A7BA-405D-9B2F-63FF6BAA7786}.Debug|Win32.Build.0 = Debug|Win32
 		{12471C41-A7BA-405D-9B2F-63FF6BAA7786}.Release|Win32.ActiveCfg = Release|Win32
 		{12471C41-A7BA-405D-9B2F-63FF6BAA7786}.Release|Win32.Build.0 = Release|Win32
+		{3EB2AD7E-DDDB-46A5-873F-8A466E6C9999}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3EB2AD7E-DDDB-46A5-873F-8A466E6C9999}.Debug|Win32.Build.0 = Debug|Win32
+		{3EB2AD7E-DDDB-46A5-873F-8A466E6C9999}.Release|Win32.ActiveCfg = Release|Win32
+		{3EB2AD7E-DDDB-46A5-873F-8A466E6C9999}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

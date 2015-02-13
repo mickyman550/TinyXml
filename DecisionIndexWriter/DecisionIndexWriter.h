@@ -10,65 +10,30 @@ Michael McGlynn (MRM)
 ***************************************************************************************************
 Ver: By:  Date:       Comment:
 1.0  MRM  11/12/2014  First version
+1.1  MRM  12/12/2014  output filename instead of path
 ***************************************************************************************************
 */
 
 #include "tinyxml.h"
 #include "tinystr.h"
 #include <string>
-#include <stdarg.h>
-
 #include "DecisionIndexData.h"
 
 namespace DecisionIndex
 {
-
+	
 	typedef std::pair<std::string, std::string> ElementEntry;
 
-	class XmlEntry
+	class Writer
 	{
 	public:
-		XmlEntry(const char *szFirst, std::string const&  str)
-		{
-			m_pElementEntry = new ElementEntry(szFirst, str.c_str());
-		}
+		Writer();
+		~Writer();
 
-		XmlEntry(const char *szFirst, const char *szSecond, ...)
-			: m_pElementEntry(0)
-		{
-			char szBuff[128];
-			va_list pArgs;
-			va_start(pArgs, szSecond);
-			_vsnprintf_s(szBuff, sizeof(szBuff), _TRUNCATE, szSecond, pArgs);
-			m_pElementEntry = new ElementEntry(szFirst, szBuff);
-		}
-
-		~XmlEntry()
-		{
-			if (m_pElementEntry)
-				delete m_pElementEntry;
-		}
-
-		ElementEntry * GetData()
-		{
-			assert(m_pElementEntry);
-			return m_pElementEntry;
-		}
-
-	private:
-		ElementEntry *m_pElementEntry;
-	};
-
-	class DecisionIndexWriter
-	{
-	public:
-		DecisionIndexWriter();
-		~DecisionIndexWriter();
-
-		bool Open(const char *szOutputFilePath, const char *szFilename = "");
+		bool Open(const char *szOutputFilePath);
 
 		bool AddIndex(const TurnDirection & index_type, __int64 i64Time, double dConfidence, ElementEntry *pExtraInfo = NULL, int iNumExtraEntries = 0);
-		bool AddIndex(DecisionIndexData const& data);
+		bool AddIndex(DecisionIndex::Data const& data);
 
 		void Save();
 
@@ -77,6 +42,7 @@ namespace DecisionIndex
 
 		void Close_Without_Saving();
 
+		std::string const& GetFilePath(){ return m_ssFilepath; }
 		bool IsOpen(){ return m_bOpen; }
 		const char *GetLastError(){ return m_szLastError; }
 	private:
@@ -87,7 +53,7 @@ namespace DecisionIndex
 	private:
 		bool m_bOpen;
 		int m_iId;
-		std::string m_ssFilename;
+		std::string m_ssFilepath;
 		char m_szLastError[512];
 	};
 

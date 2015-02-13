@@ -14,17 +14,18 @@ int main(int argc, char** argv)
 
 	const char *szFile = "C:\\develop\\801 - Map\\DecisionIndex\\test.decision.xml";//argv[1];//
 
-	DecisionIndexReader reader;
+	DecisionIndex::Reader reader;
 
 	if(!reader.Load(szFile))
 	{
 		return 1;
 	}
 
-	std::vector<DecisionIndex::DecisionIndexData> vDecisionIndexData(reader.GetNumIndexes());
-	for( int i = 0; i < reader.GetNumIndexes(); i++)
+	std::vector<DecisionIndex::Data> vDecisionIndexData;
+	DecisionIndex::Data data;
+	while(reader.GetDecision(data))
 	{
-		vDecisionIndexData[i] = reader.GetIndex(i);
+		vDecisionIndexData.push_back(data);
 	}
 
 	return 0;

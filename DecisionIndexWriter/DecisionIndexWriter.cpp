@@ -3,6 +3,7 @@
 #include <vadefs.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include <assert.h>
 
 static const char *szXmlVersion = "1.0";
 static const char* szFormatVersion = "1.0";
@@ -14,53 +15,107 @@ namespace DecisionIndex
 	static void AddElementId(TiXmlElement **ppElement, int id);
 
 
-	DecisionIndexWriter::DecisionIndexWriter()
+	class XmlEntry
+	{
+	public:
+		XmlEntry(const char *szFirst, std::string const&  str)
+		{
+			m_pElementEntry = new ElementEntry(szFirst, str.c_str());
+		}
+
+		XmlEntry(const char *szFirst, const char *szSecond, ...)
+			: m_pElementEntry(0)
+		{
+			char szBuff[128];
+			va_list pArgs;
+			va_start(pArgs, szSecond);
+			_vsnprintf_s(szBuff, sizeof(szBuff), _TRUNCATE, szSecond, pArgs);
+			m_pElementEntry = new ElementEntry(szFirst, szBuff);
+		}
+
+		~XmlEntry()
+		{
+			if (m_pElementEntry)
+				delete m_pElementEntry;
+		}
+
+		ElementEntry * GetData()
+		{
+			assert(m_pElementEntry);
+			return m_pElementEntry;
+		}
+	private:
+		ElementEntry *m_pElementEntry;
+	};
+
+
+	// Change the file extension part of this filename. Pass in the new extension without the '.'
+	static std::string changeFileExtension(const char * szName, const char * szExt)
+	{
+		std::string ssName = szName;
+		std::string::size_type pos = ssName.rfind('.');
+		while (pos != std::string::npos)
+		{
+			ssName.erase(pos);
+			pos = ssName.rfind('.');
+		}
+		ssName += '.';
+		ssName += szExt;
+		return ssName;
+	}
+
+	std::string getFilenameFromPath(const char *szFilePath)
+	{
+		std::string ssFilePath = szFilePath;
+		std::string ssFileName;
+
+		size_t find = ssFilePath.find_last_of("\\");
+		if (find == std::string::npos)	//not a path.
+			return szFilePath;
+		else if (find == ssFilePath.length())	//directory
+			return szFilePath;
+		else
+			ssFileName = ssFilePath.substr(find + 1, ssFilePath.length());	//filename
+
+		return ssFileName;
+	}
+
+	Writer::Writer()
 		: m_bOpen(false)
 		, m_pDocument(NULL)
 		, m_iId(0)
 	{
 	}
 
-	DecisionIndexWriter::~DecisionIndexWriter()
+	Writer::~Writer()
 	{
 		Close();
 	}
 
-	bool DecisionIndexWriter::Open(const char *szOutputFilePath, const char *szFilename)
+	bool Writer::Open(const char *szOutputFilePath)
 	{
-		m_pDocument = new TiXmlDocument(szOutputFilePath);
+		m_ssFilepath = changeFileExtension(szOutputFilePath, "decision.xml");
+		m_pDocument = new TiXmlDocument(m_ssFilepath.c_str());
 		m_pDocument->LinkEndChild(new TiXmlDeclaration(szXmlVersion, "", ""));
 
+		std::string ssFilename = getFilenameFromPath(m_ssFilepath.c_str());
 		m_pMain_element = new TiXmlElement("DecisionIndex");
 		m_pMain_element->SetAttribute("FormatVersion", szFormatVersion);
-		m_pMain_element->SetAttribute("File", szOutputFilePath);
+		m_pMain_element->SetAttribute("File", ssFilename.c_str());
 
-		m_ssFilename = szOutputFilePath;
 		m_bOpen = true;
-
 		m_iId = 0;
-
 		return true;
 	}
 
 	std::string GetDecisionText(const TurnDirection & decision)
 	{
-		std::string str;
-		switch (decision)
-		{
-		case(Direction_Left) :
-			str = "L";
-			break;
-		case(Direction_Right) :
-			str = "R";
-			break;
-		case(Direction_Unknown) :
-			str = "U";
-			break;
-		default:
-			break;
-		}
-		return str;
+		if (decision == Direction_Left)
+			return "L";
+		else if (decision == Direction_Right)
+			return "R";
+		else
+			return "U";
 	}
 
 	void AddToElement(TiXmlElement **ppElement, ElementEntry *pEntries, int iNumEntries)
@@ -74,12 +129,12 @@ namespace DecisionIndex
 		AddToElement(ppElement, XmlEntry("ID", "%i", id).GetData(), 1);
 	}
 
-	bool DecisionIndexWriter::AddIndex(DecisionIndexData const& data)
+	bool Writer::AddIndex(DecisionIndex::Data const& data)
 	{
 		return AddIndex(data.direction, data.i64Time, data.dConfidence);
 	}
 
-	bool DecisionIndexWriter::AddIndex(const TurnDirection & decision, __int64 i64Time, double dConfidence
+	bool Writer::AddIndex(const TurnDirection & decision, __int64 i64Time, double dConfidence
 		, ElementEntry *pExtraInfo/* = NULL*/, int iNumExtraEntries/* = 0*/)
 	{
 		if (!m_bOpen)
@@ -100,17 +155,17 @@ namespace DecisionIndex
 		return true;
 	}
 
-	void DecisionIndexWriter::Close_Without_Saving()
+	void Writer::Close_Without_Saving()
 	{
 		if (m_pDocument)
 			m_pDocument->Clear();
 
-		m_ssFilename = "";
+		m_ssFilepath = "";
 		m_bOpen = false;
 		m_iId = 0;
 	}
 
-	void DecisionIndexWriter::Close()
+	void Writer::Close()
 	{
 		if (m_bOpen)
 			Save();
@@ -118,20 +173,20 @@ namespace DecisionIndex
 		Close_Without_Saving();
 	}
 
-	void DecisionIndexWriter::Save()
+	void Writer::Save()
 	{
 		if (!m_bOpen)
 			return;
 
 		m_pDocument->LinkEndChild(m_pMain_element);
-		m_pDocument->SaveFile(m_ssFilename.c_str());
+		m_pDocument->SaveFile(m_ssFilepath.c_str());
 		m_bOpen = false;
 		Close();
 		m_bOpen = false;
 		m_iId = 0;
 	}
 
-	void DecisionIndexWriter::OnError(const char *szFmt, ...)
+	void Writer::OnError(const char *szFmt, ...)
 	{
 		char szError[4096];
 		va_list pArgs;

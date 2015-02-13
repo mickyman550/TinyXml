@@ -14,7 +14,7 @@ int main(int argc, char** argv)
 
 	const char *szFile = "C:\\develop\\801 - Map\\DecisionIndex\\test.decision.xml";//argv[1];//
 
-	DecisionIndexWriter writer;
+	DecisionIndex::Writer writer;
 	if(!writer.Open("C:\\develop\\801 - Map\\DecisionIndex\\test.decision.xml"))
 	{
 		return 1;
