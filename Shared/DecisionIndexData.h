@@ -1,6 +1,5 @@
 #pragma once
 
-
 /*
 Contains the data structure used by DecisionIndexReader and DecisionIndexWriter.
 ***************************************************************************************************
@@ -9,6 +8,7 @@ Michael McGlynn (MRM)
 ***************************************************************************************************
 Ver: By:  Date:       Comment:
 1.0  MRM  11/12/2014  First version
+1.1  MRM  12/12/2014  renamed class to Data
 ***************************************************************************************************
 */
 
@@ -16,9 +16,9 @@ namespace DecisionIndex
 {
 
 	enum TurnDirection{ Direction_Left, Direction_Right, Direction_Unknown };
-	struct DecisionIndexData
+	struct Data
 	{
-		DecisionIndexData()
+		Data()
 		{
 			iId = 0;
 			direction = TurnDirection::Direction_Unknown;
@@ -26,12 +26,12 @@ namespace DecisionIndex
 			dConfidence = 1.0;
 		}
 
-		DecisionIndexData(const DecisionIndexData & data)
+		Data(const Data & data)
 		{
 			*this = data;
 		}
 
-		DecisionIndexData(int _iId, TurnDirection _Direction, __int64 _i64Time, double _dConfidence)
+		Data(int _iId, TurnDirection _Direction, __int64 _i64Time, double _dConfidence)
 			: iId(_iId), direction(_Direction), i64Time(_i64Time), dConfidence(_dConfidence)
 		{
 		}
